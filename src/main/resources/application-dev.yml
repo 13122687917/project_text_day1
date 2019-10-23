@@ -1,0 +1,4 @@
+
+resources:
+  imagesServer: http://devimages.qt.com
+  emailServer: http://devemail.qt.com

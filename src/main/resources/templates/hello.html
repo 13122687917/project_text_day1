@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    模板页面
+    <span th:text="${username}"></span>
+    <span th:text="${#dates.format(date,'yyyy-MM-dd HH-mm-ss')}"></span>
+    <span th:if="${username == password}">
+            用户名，密码相等
+    </span>
+    <tr th:each="user = ${users}">
+        <td th:text="${user.name}"></td>
+    </tr>
+</body>
+</html>
